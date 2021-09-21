@@ -14,7 +14,6 @@ import './style.css';
 function ListPage({ history, match}) {
     const { state, dispatch } = GetContext();
     const { login, trailList } = state;
-    console.log(trailList, 'asdadad');
     const initials = {
         task_msg:'',
         task_date: '',

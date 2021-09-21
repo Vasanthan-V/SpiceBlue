@@ -4,7 +4,7 @@ import { POST_TASK, CLEAR_LIST, GET_TASK_LIST } from '../_main/actionTypes';
 const initial = {
     list: { data: [], error: null },
     tasklist: { data: {}, error: null },
-    tasklistGet: {data: {}, error: null},
+    tasklistGet: { data: {}, error: null },
     item: { data: [], error: null },
 };
 export function ListReducer(state = initial, action) {

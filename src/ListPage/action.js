@@ -20,9 +20,9 @@ export function postTask(dispatch, request) {
     return callFetch(url, {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${localStorage.token}`, 
+            Authorization: `Bearer ${localStorage.token}`,
             'Content-Type': 'application/json',
-            'Accept': 'application/json',          
+            Accept: 'application/json',
         },
         body: stringifier(request),
     })
@@ -48,15 +48,15 @@ export function postTask(dispatch, request) {
         });
 }
 
-export function updateTask(dispatch, request, task_id ) {
+export function updateTask(dispatch, request, task_id) {
     dispatch(setLoading(true));
     const url = `https://stage.api.sloovi.com/task/lead_c1de2c7b9ab94cb9abad131b7294cd8b/${task_id}?company_id=${localStorage.company_id}`;
     return callFetch(url, {
         method: 'PUT',
         headers: {
-            'Authorization': `Bearer ${localStorage.token}`,
+            Authorization: `Bearer ${localStorage.token}`,
             'Content-Type': 'application/json',
-            'Accept': 'application/json', 
+            Accept: 'application/json',
         },
         body: stringifier(request),
     })
@@ -87,7 +87,7 @@ export function getTasks(dispatch) {
     return callFetch(url, {
         method: 'GET',
         headers: {
-            'Authorization': `Bearer ${localStorage.token}`,
+            Authorization: `Bearer ${localStorage.token}`,
             'Content-Type': 'application/json',
         },
     })
@@ -108,9 +108,9 @@ export function clearTask(dispatch, task_id) {
     return callFetch(url, {
         method: 'DELETE',
         headers: {
-            'Authorization': `Bearer ${localStorage.company_id}`,
+            Authorization: `Bearer ${localStorage.company_id}`,
             'Content-Type': 'application/json',
-            'Accept': 'application/json',          
+            Accept: 'application/json',
         },
     })
         .then(() => {
