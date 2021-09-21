@@ -1,0 +1,123 @@
+#login-container {
+    height: 100vh;
+    font-size: 16px @767 13px @400 11px;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    .head-container {
+        height: 8vh;
+        width: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 17px 0px;
+        .image {
+            height: 100%;
+            padding-left: 10%;
+            object-fit: cover;
+        }
+    }
+    .body-container {
+        padding-top: 1em;
+        height: 92vh;
+        .login-form-container {
+            height: 90vh;
+            width: 50%;
+            padding-left: 10%;
+            .login-form {
+                width: 90%;
+                .name {
+                    font-size: 2.7em;
+                    font-weight: bold;
+                    color: Var(--dark-blue);
+                    padding: 1.5em 0 0.5em 0;
+                }
+                .desc {
+                    font-size: 1em;
+                    line-height: 1.45em;
+                    color: #adadad;
+                    padding-bottom: 3em;
+                }
+                i {
+                    font-size: 0.9em;
+                    color: #adadad;
+                }
+                .user-name {
+                    font-size: 1em;
+                    font-weight: bold;
+                    color: Var(--too-light-blue);
+                }
+                .asterisk {
+                    color: red;
+                }
+                .password-label {
+                    font-size: 1em;
+                    font-weight: bold;
+                    color: Var(--too-light-blue);
+                }
+                .user-name-field {
+                    height: 2.5em;
+                    border: 1px solid var(--medium-grey);
+                    border-radius: 3px;
+                    width: 70%;
+                    font-size: 0.8em;
+                    padding: 1em;
+                    &:focus {
+                        border: 1px solid Var(--too-light-blue);
+                    }
+                }
+                .password-field {
+                    height: 2.5em;
+                    border: 1px solid var(--medium-grey);
+                    border-radius: 3px;
+                    width: 70%;
+                    font-size: 0.8em;
+                    padding: 1em;
+                    &:focus {
+                        border: 1px solid Var(--too-light-blue);
+                    }
+                }
+                .invalidUser {
+                    color: red;
+                    font-size: 0.8em;
+                }
+                .submit-container {
+                    padding-top: 2em;
+                    .submit-button {
+                        background-color: '#0e76aa';
+                        color: #fff;
+                        border-radius: 4px;
+                        border: none;
+                        padding: 0px 19px;
+                        margin: 0em;
+                        cursor: pointer;
+                        width: 70%;
+                        font-size: 1.1em;
+                        height: 2.3em;
+                    }
+                }
+                .error-message {
+                    color: var(--orangish-red);
+                    font-size: 0.75em;
+                }
+            }
+        }
+    }
+    .image-container {
+        width: 50%;
+        .image {
+            height: 90vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.submit-button {
+    background-color: '#0e76aa';
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 0px 19px;
+    margin: 0em;
+    cursor: pointer;
+    width: 70%;
+    font-size: 1.1em;
+    height: 2.3em;
+}

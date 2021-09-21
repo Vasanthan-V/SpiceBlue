@@ -1,0 +1,143 @@
+body {
+    line-height: 1.6em;
+    overflow-y: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    font-size: @1920 var(--medium-px) @1440 var(--medium-px) @1024 var(--small-px);
+}
+
+.app-container {
+    background-image: linear-gradient(to bottom right, #004881, #01150a);
+    background-size: cover;
+    background-position-x: right;
+    height: 100vh;
+}
+
+.err-row {
+    background: #c15151 !important;
+    color: white !important;
+}
+
+.container-of-hidden {
+    overflow: hidden;
+}
+
+.small {
+    font-size: smaller;
+}
+
+strong,
+.strong,
+.f-500 {
+    font-family: 'medium-font';
+}
+
+.f-300 {
+    font-family: 'light-font';
+}
+
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-uppercase {
+    text-transform: uppercase;
+}
+
+.t-capitalize {
+    text-transform: capitalize;
+}
+
+.t-capitalize-force {
+    text-transform: lowercase;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.color-white {
+    color: var(--white);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.color-red {
+    color: var(--red);
+}
+
+.color-green {
+    color: var(--green);
+}
+
+.color-gray {
+    color: var(--gray);
+}
+
+.color-light-gray {
+    color: var(--gray-light);
+}
+
+.color-bray {
+    color: var(--bray);
+}
+
+.color-bray-dark {
+    color: var(--bray-dark);
+}
+
+.color-bray-medium {
+    color: var(--bray-medium);
+}
+
+.color-bray-light {
+    color: var(--bray-light);
+}
+
+.color-whitish {
+    color: var(--whitish);
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+a,
+.link {
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: normal;
+    font-size: 1em;
+    width: auto;
+    padding: 0;
+    background-color: inherit;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.t-ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.subhead {
+    text-transform: uppercase;
+    font-family: 'light-font';
+}
+
+.break-word {
+    overflow-wrap: break-word;
+}

@@ -1,0 +1,27 @@
+@import './variables.css';
+@import './general.css';
+@import './mixin.css';
+@import './typography.css';
+@import './general.css';
+@import './grid.css';
+@import './flex.css';
+@import './margin-padding.css';
+@import './margin-padding.css';
+@import './containers.css';
+@import './color.css';
+@import './background.css';
+@import './slider.css';
+@import './theme.css';
+@import './input-container.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+input:focus,
+button:focus {
+    outline: none;
+}

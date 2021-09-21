@@ -1,0 +1,27 @@
+
+.box-shadow {
+  box-shadow: 0 10px 20px 0 rgba(46, 91, 175, 0.1);;
+}
+.content {
+  @insert .box-shadow;
+  padding: 20px @767 15px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  font-size: @767 12px @420 10px @375 10px @320 9px;
+}
+.colors{
+  background-color: #1e1e3a;
+  color:#ffffff;
+  border-radius: var(--border-radius);
+ 
+}
+
+.box {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--gray-light);
+  padding: 20px;
+}
+
+.dir-rtl{
+  direction: rtl;
+}

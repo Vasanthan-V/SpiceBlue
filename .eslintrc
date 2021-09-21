@@ -1,0 +1,127 @@
+{
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  },
+  "extends": [
+    "standard",
+    "standard-react",
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import",
+    "react-hooks"
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "eol-last": 0,
+    "import/prefer-default-export": "off",
+    "camelcase": [
+      "error",
+      {
+        "allow": [
+          "^UNSAFE_",
+          "_"
+        ]
+      }
+    ],
+    "indent": [
+      2,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      "error",
+      200,
+      {
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreStrings": true,
+        "ignoreUrls": true
+      }
+    ],
+    "max-statements-per-line": [
+      2,
+      {
+        "max": 1
+      }
+    ],
+    "import/no-unresolved": [
+      2,
+      {
+        "caseSensitive": false
+      }
+    ],
+    "no-console": 0,
+    "semi": [
+      2,
+      "always"
+    ],
+    "react/jsx-indent": [
+      2,
+      4
+    ],
+    "react/jsx-indent-props": [
+      2,
+      4
+    ],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/react-in-jsx-scope": "error",
+    "react/jsx-closing-bracket-location": [
+      0
+    ],
+    "react/jsx-space-before-closing": [
+      0
+    ],
+    "react/jsx-tag-spacing": [
+      0
+    ],
+    "promise/catch-or-return": [
+      0
+    ],
+    "no-script-url": [
+      0
+    ],
+    "class-methods-use-this": "off",
+    "no-param-reassign": [
+      0
+    ],
+    "no-unused-expressions": [
+      0
+    ],
+    "no-underscore-dangle": [
+      0
+    ],
+    "space-before-function-paren": [
+      0
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used"
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}

@@ -1,0 +1,26 @@
+  #innerMenu-container{ 
+    font-family: Arial, Helvetica, sans-serif;
+        .innerMenu{
+            width:100%;
+            padding: 1em 5em @767 1em 2em;
+            font-size: 1em;
+            .color-link{
+              color: var(--light-blue);
+              &:hover {
+                cursor: pointer;
+            }
+            }
+            .color-linkTwo{
+              color: var(--black);
+            }
+            p{
+              font-size: 0.9em;
+              font-weight: bold;
+            }
+            li{
+              font-weight: bold;
+            }
+        }
+  }
+  
+
