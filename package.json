@@ -1,6 +1,7 @@
 {
-  "name": "tb-trials",
+  "name": "spicebluetask",
   "version": "1.0.0",
+  "homepage": "https://spicebluetask.herokuapp.com/"
   "scripts": {
     "start": "webpack-dev-server --mode development --devtool inline-source-map",
     "build": "NODE_ENV='prod' webpack --mode=production",
