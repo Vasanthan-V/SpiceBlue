@@ -2,7 +2,6 @@
   "name": "spicebluetask",
   "version": "1.0.0",
   "homepage": "https://spicebluetask.herokuapp.com/",
-  "private": true,
   "engines": {
     "node": "12.x" 
   },
